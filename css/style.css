@@ -1,1 +1,54 @@
 /* YeyeYeee código aquí */
+.container {
+  height: 100vh;
+}
+.first-screen {
+  background-color: #3E3F41;
+}
+.head{
+  margin: 20% 0% 0% 0%;
+}
+.transLab {
+  margin-top: 0%;
+  font-family: 'Roboto', sans-serif;
+  color: #F6A800;
+  font-size: 2rem ;
+  font-weight: 700;
+  text-align: center;
+}
+.image{
+  width: 70%;
+  margin: 0% 20%;
+}
+.iniciar{
+  width: 100%;
+  background-color: #F6A800;
+  color: #3E3F41;
+  font-family: 'Roboto';
+  font-weight: 300;
+  border: #F6A800;
+  border-radius: 0%;
+}
+.input{
+  border-radius: 0%;
+}  
+.remember {
+  color: white;
+}
+.registro{
+  margin: 20% 0%;
+}
+footer{
+  text-align: right;
+  margin-right: 0%;
+  margin-bottom: 4%;
+}
+#footer1{
+  display: inline;
+  color: white;
+}
+#footer2{
+  display: inline;
+  color: #F6A800;
+  font-weight: 500;
+}
