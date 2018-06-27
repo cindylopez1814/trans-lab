@@ -1,5 +1,5 @@
 const btnIniciar = document.getElementById('init');
-
+// Validar datos
 btnIniciar.addEventListener('click', () => { 
   let email = document.getElementById('email').value;
   let password = document.getElementById('password').value;
@@ -8,14 +8,17 @@ btnIniciar.addEventListener('click', () => {
   if(email === "" || password === "") {
     alert("Todos los campos son obligatorios");
   }
-  if(!expresion.test(email)) {
+  else if(!expresion.test(email)) {
     alert("El correo no es valido")
   }
-  if(password.length > 8) {
+  else if(password.length > 8) {
     alert("La contaseña es muy larga");
   }
-  if (isNaN(password)){
+  else if(isNaN(password)){
     alert("La contaseña no es valida");
     return false;
+  }
+  else{
+    window.open('menu.html')
   }
 }); 

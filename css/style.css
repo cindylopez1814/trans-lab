@@ -52,3 +52,33 @@ footer{
   color: #F6A800;
   font-weight: 500;
 }
+.second-screen{
+  background-color: #DDDEE0;
+  height: 100%;
+}
+.hamburguesa{
+  background-color: #3E3F41;
+  color: white;
+  text-align: center;
+} 
+.linea{
+  color: white;
+  margin: 0%;
+}
+.linea:hover{
+  color: #DDDEE0;
+  background-color: #3E3F41;
+}
+h2{
+  text-align: center;
+  margin: 4% 1% 2% 20%
+}
+.principal{
+  width: 100%;
+  background-color: #F6A800;
+  color: white;
+  margin: 2% 0%;
+}
+.botones{
+  margin: 30% 1% 30% 1%;
+}
