@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script src="js/main.js"></script>
   <title>TransLab</title>
 </head>
 <body>
@@ -23,7 +22,7 @@
       <h1 class="transLab">TRANS-LAB</h1>            
       <div class="registro">
         <p class="control has-icons-left has-icons-right">
-          <input class="input" type="email" placeholder="CORREO ELECTRONICO">
+          <input id="email" class="input" type="email" placeholder="CORREO ELECTRONICO" required>
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -32,14 +31,14 @@
           </span>
         </p>
         <p class="control has-icons-left">
-          <input class="input" type="password" placeholder="CONTRASEÑA">
+          <input id="password" class="input" type="password" placeholder="CONTRASEÑA" required>
           <span class="icon is-small is-left">
             <i class="fas fa-lock"></i>
           </span>
         </p>
       <div class="field">
         <p class="control">
-          <button class="button iniciar">INICIAR SESIÓN</button>
+          <button class="button iniciar" id="init">INICIAR SESIÓN</button>
         </p>
       </div>
       <div class="remember"> 
@@ -54,5 +53,6 @@
     
   </div>
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
