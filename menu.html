@@ -12,17 +12,51 @@
 <body>
     <div class="second-screen">
       <div class="row">
-        <div class="columns is-mobile">
-          <div class="column">
+        <div class="is-mobile header">
+          <div class="column barra">
             <nav class="navbar hamburguesa" role="navigation" aria-label="main navigation">
               <div class="navbar-brand">            
-                <a role="button" class="navbar-burger linea" aria-label="menu" aria-expanded="false">
+                  <a role="button" class="navbar-burger linea" data-target="navMenu" aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                   <span aria-hidden="true"></span>
                 </a>
                 <h2>TRANS-LAB</h2>
-              </div>
+              </div>  
+              <div id="navMenu" class="navbar-menu">
+                  <div class="navbar-end">
+                    <a href="#" class="navbar-item">
+                      <span class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                      </span>  
+                      <h6>Ver Saldo</h6> 
+                    </a>
+                    <a href="#" class="navbar-item">
+                      <span class="icon is-small">
+                          <i class="fas fa-calculator"></i>
+                      </span>  
+                      <h6>Calcular Tarifa</h6>
+                    </a>
+                    <a href="#" class="navbar-item">
+                        <span class="icon is-small">
+                            <i class="far fa-user"></i>
+                        </span>  
+                        <h6>Perfil</h6>                        
+                    </a>
+                    <a href="#" class="navbar-item">
+                        <span class="icon is-small">
+                            <i class="far fa-question-circle"></i>
+                        </span>
+                        <h6>Preguntas Frecuentes</h6>
+                    </a>
+                    <a href="#" class="navbar-item">
+                      <span class="icon is-small">
+                        <i class="fas fa-arrow-right"></i>
+                      </span> 
+                      <h6> Home</h6>
+                    </a>
+                  </div>
+                </div> 
             </nav>
           </div>
         </div>

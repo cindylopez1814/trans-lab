@@ -1,6 +1,6 @@
 const btnIniciar = document.getElementById('init');
 // Validar datos
-btnIniciar.addEventListener('click', () => { 
+/*btnIniciar.addEventListener('click', () => { 
   let email = document.getElementById('email').value;
   let password = document.getElementById('password').value;
   const expresion = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -21,4 +21,11 @@ btnIniciar.addEventListener('click', () => {
   else{
     window.open('menu.html')
   }
-}); 
+}); */
+
+let burger = document.querySelector('.linea');
+let nav = document.querySelector('#'+ burger.dataset.target);
+burger.addEventListener('click', () => {
+  burger.classList.toggle('is-active');
+  nav.classList.toggle('is-active');
+});
