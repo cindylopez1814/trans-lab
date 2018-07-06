@@ -1,6 +1,6 @@
 const btnIniciar = document.getElementById('init');
 // Validar datos
-/*btnIniciar.addEventListener('click', () => { 
+btnIniciar.addEventListener('click', () => { 
   let email = document.getElementById('email').value;
   let password = document.getElementById('password').value;
   const expresion = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -21,11 +21,38 @@ const btnIniciar = document.getElementById('init');
   else{
     window.open('menu.html')
   }
-}); */
-
+}); 
+//Desplegar menu hamburguesa
 let burger = document.querySelector('.linea');
 let nav = document.querySelector('#'+ burger.dataset.target);
 burger.addEventListener('click', () => {
   burger.classList.toggle('is-active');
   nav.classList.toggle('is-active');
 });
+//Links a los menus
+const home = document.getElementsByClassName('home');
+home.addEventListener('click', () => window.open('menu.html'));
+
+const perfil = document.getElementsByClassName('perfil');
+perfil.addEventListener('click', () => window.open('perfil.html'));
+
+//Email de usuario
+mailUser.innerHtml = email;
+
+//Agregar tarjetas
+const botonAgregar = () => {
+const btnAgregar = document.getElementById('agregarTarjetas');
+btnAgregar.addEventListener('click', () => {
+  let numeroTarjetas = document.getElementById('tarjetaBip').value = "";
+  const listaTarjetas = document.createElement('div')
+  const newTarget = document.createTextNode(numeroTarjetas);
+  const contenerNewTarjeta = document.createElement('p');
+  contenerNewTarjeta.appendChild(newTarget);
+  listaTarjetas.appendChild(contenerNewTarjeta);
+  tarjetas.appendChild(listaTarjetas);
+
+
+
+})
+};
+
