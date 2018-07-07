@@ -33,7 +33,7 @@
                         </span>  
                         <h6>Calcular Tarifa</h6>
                       </a>
-                      <a href="#" class="navbar-item">
+                      <a href="perfil.html" class="navbar-item">
                           <span class="icon is-small">
                               <i class="far fa-user"></i>
                           </span>  
@@ -45,7 +45,7 @@
                           </span>
                           <h6>Preguntas Frecuentes</h6>
                       </a>
-                      <a href="#" class="navbar-item">
+                      <a href="menu.html" class="navbar-item">
                         <span class="icon is-small">
                           <i class="fas fa-arrow-right"></i>
                         </span> 
@@ -73,6 +73,15 @@
             </div>
           </section>
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <script src="js/main.js"></script>
+  <script>
+      //Desplegar menu hamburguesa
+      let burger = document.querySelector('.linea');
+      let nav = document.querySelector('#'+ burger.dataset.target);
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    </script>
+  <script src="perfil.js"></script>
 </body>
 </html>
