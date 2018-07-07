@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title>TransLab</title>
+</head>
+<body>
+              <nav class="navbar hamburguesa" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">            
+                    <a role="button" class="navbar-burger linea" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                  <h2>TRANS-LAB</h2>
+                </div>  
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                      <a href="#" class="navbar-item">
+                        <span class="icon">
+                          <i class="fas fa-dollar-sign"></i>
+                        </span>  
+                        <h6>Ver Saldo</h6> 
+                      </a>
+                      <a href="#" class="navbar-item">
+                        <span class="icon is-small">
+                            <i class="fas fa-calculator"></i>
+                        </span>  
+                        <h6>Calcular Tarifa</h6>
+                      </a>
+                      <a href="perfil.html" class="navbar-item">
+                          <span class="icon is-small">
+                              <i class="far fa-user"></i>
+                          </span>  
+                          <h6>Perfil</h6>                        
+                      </a>
+                      <a href="#" class="navbar-item">
+                          <span class="icon is-small">
+                              <i class="far fa-question-circle"></i>
+                          </span>
+                          <h6>Preguntas Frecuentes</h6>
+                      </a>
+                      <a href="menu.html" class="navbar-item">
+                        <span class="icon is-small">
+                          <i class="fas fa-arrow-right"></i>
+                        </span> 
+                        <h6> Home</h6>
+                      </a>
+                    </div>
+                  </div> 
+              </nav>      
+          <section class="section section-saldos">
+            <div class="container">
+                  <div class="control">
+                    <input class="input is-small ingresar-tarjeta" id="tarjeta-bip" type="text" placeholder="Numero de tarjeta">
+                  </div>
+                  <div class="control">
+                      <div class="select selecciona">
+                        <select class="is-hovered selecciona-desplega">
+                          <option>Selecciona</option>
+                          <option>n°</option>
+                        </select>
+                      </div>
+                    </div>
+                
+              <a class="button mostrar-saldos" id="verSaldo">VER SALDO</a>
+              <div id="numBips"></div>
+              <div id="saldos"></div>
+              <div id="fecha"></div>
+            </div>
+          </section>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script>
+      //Desplegar menu hamburguesa
+      let burger = document.querySelector('.linea');
+      let nav = document.querySelector('#'+ burger.dataset.target);
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    </script>
+  <script src="saldo.js"></script>
+</body>
+</html>
